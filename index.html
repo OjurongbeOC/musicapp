@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width" initial-scale="1">
+	<!--<link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/all.min.css">-->   
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz@8..144&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon"  href="favicon.png">
+	<title>Songlam music app</title>
+	<link rel="stylesheet" href="stylesheet.css"/>
+</head>
+<body>
+	<div class="preload">
+		<img src="favicon.png" class="preload-img" style="width: 40px;height: 40px">
+		<div class="preload-text">SONGLAM</div>
+	</div>
+	<div class="music-down">
+		<input type="range" name="seek" class="seek" value="0">
+	</div>
+	<header class="header">
+		<label><img src="favicon.png" style="width: 40px;height: 40px"> <span class="title">SONGLAM</span></label>
+		<input type="search" name="searcher" class="searcher" placeholder="search">
+		<i class="fa fa-search search-icon"></i>
+	</header>
+	<header class="hed-seaarch">
+		<i class="fa fa-angle-left left-search"></i>
+		<input type="search" name="searcher" class="searcher2" placeholder="search">
+	</header>
+	<section>
+	<main>
+		<!-- options -->
+	<div class="song-div"></div>
+	<audio src="" controls class="audio"></audio>
+<div class="music-container">
+	<div class="houser">
+	<div class="hider"><i class="fa fa-angle-down fa-2x hideme"></i></div>
+	<div class="img-div">
+	<img src="image-interactive.png" class="music-img">
+    </div>
+    <div class="details">
+	<div class="music-name"></div>
+	<div class="artist-name"></div>
+    </div>
+    <div class="controller social">
+		<button class="fa fa-heart fa-2x  socialiconi" id="log"></button>
+		<button class="fa fa-comment fa-2x socialiconi" id="log"></button>
+		<button class="fa fa-share fa-2x socialiconi" id="log"></button>
+	</div>
+	<div class="ranger">
+		<input type="range" name="seek" class="seeker" value="0">
+	<div class="controller">
+		<button class="fa fa-shuffle" id="shuffle"></button>
+		<button class="fa-solid fa-backward-step fa-2x" id="backwardbtn"></button>
+		<button class="fa fa-play fa-2x" id="playx"></button>
+		<button class="fa-solid fa-forward-step fa-2x" id="forwardbtn"></button>
+		<button class="fa fa-volume-up" id="mute"></button>
+	</div>
+</div>
+</div>
+<div class="formarea">
+	<button class="fa fa-times close" onclick="closer()"></button>
+	<form name="myform" onsubmit="return(validate())">
+		<h2 class="formtext">LOGIN</h2>
+		<input type="email" name="email" class="formfield" placeholder="Email address" required><br>
+		<input type="password" name="password" class="formfield password" placeholder="Password" required><br>
+		<span class="flexer"><button type="submit" class="btnsubmit" onclick="loger()">LOGIN</button></span>
+		<p class="formdetails"></p>
+		<p class="opt">Don't have an account yet? <a class="colorer" href="index.html">Sign up</a></p>
+	</form>
+</div>
+</main>
+<script type="text/javascript" src="jav.js">
+</script>
+</body>
+</html>
